@@ -1,3 +1,58 @@
+# Newly added leetcode APIs for the leetcoder iOS app
+This API offers several endpoints for retrieving user details, contest information, discussions, and problem details from the LeetCode GraphQL API. As part of my iOS SwiftUI learning journey, I developed an app for LeetCode: LeetCode Profile Visualization. To support the app, I incorporated the following GraphQL queries. The original codebase for this API is derived from: https://github.com/alfaarghya/alfa-leetcode-api 
+
+
+# New package
+- Added API cache
+- Added Axios for rapid development
+
+## User Details
+
+- `GET /:username`: Get your LeetCodeVis profile details.
+- `GET /:username/badges`: Get your badges.
+- `GET /:username/solved`: Get total number of questions you solved.
+- `GET /:username/contest`: Get your contest details.
+- `GET /:username/contest/history`: Get all contest history.
+- `GET /:username/submission`: Get your last 20 submissions.
+- `GET /:username/acSubmission`: Get your last 20 accepted submissions.
+- `GET /:username/calendar`: Get your submission calendar.
+- `GET /userProfile/:username`: Get full profile details in one call.
+- `GET /userProfileCalendar?username=yourname&year=2024`: Get your calendar details with year.
+- `GET /languageStats/:username`: Get your language stats.
+- `GET /userProfileUserQuestionProgressV2/:userSlug`: Get your question progress.
+- `GET /skillStats/:username`: Get your skill stats.
+
+## Contest Details
+
+- `GET /contest/:contestSlug`: Get contest details.
+- `GET /contestRanking/:contestSlug`: Get contest ranking.
+- `GET /userContestRankingInfo/:username`: Get user contest ranking info.
+
+## Discussions
+
+- `GET /discussion/:first`: Get trending discussion.
+- `GET /discussTopic/:topicId`: Get discussion topic.
+- `GET /discussComments/:topicId`: Get discussion comments.
+
+## Problems
+
+- `GET /select?titleSlug=two-sum`: Get selected problem.
+- `GET /daily`: Get daily problem.
+- `GET /dailyQeustion`: Get raw daily question.
+- `GET /questionOfTodayQuery`: Get raw question of today.
+- `GET /problems`: Get list of 20 problems.
+- `GET /problems?limit=50`: Get list of some problems.
+- `GET /problems?tags=array+math`: Get list problems on selected topics.
+- `GET /problems?tags=array+math+string&limit=5`: Get list some problems on selected topics.
+- `GET /officialSolution?titleSlug=two-sum`: Get official solution of selected problem.
+
+Please note that all endpoints are subject to rate limiting and other restrictions.
+
+
+
+
+# below are the original doc from Alfa
+------------------------------------------
 <h1 align="center">alfa-leetcode-api</h1>
 <div align="center">
 
