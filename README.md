@@ -2,6 +2,7 @@
 This API offers several endpoints for retrieving user details, contest information, discussions, and problem details from the LeetCode GraphQL API. As part of my iOS SwiftUI learning journey, I developed an app for LeetCode: LeetCode Profile Visualization. To support the app, I incorporated the following GraphQL queries. The original codebase for this API is derived from: https://github.com/alfaarghya/alfa-leetcode-api 
 
 
+
 # New package
 - Added API cache
 - Added Axios for rapid development
@@ -48,7 +49,8 @@ This API offers several endpoints for retrieving user details, contest informati
 
 Please note that all endpoints are subject to rate limiting and other restrictions.
 
-
+Example use of this api:
+![Swift](swift.jpg)
 
 
 # below are the original doc from Alfa
